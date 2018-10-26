@@ -1,0 +1,201 @@
+:root{
+    box-sizing: border-box;  
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1em);
+}
+
+html{
+    font-size: inherit;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+    margin: 0;
+
+}
+
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 8em;
+    align-items: center;
+    background-color: #232338;
+    position: fixed;
+}
+
+.nav h1{
+    width: 16.9%;
+    padding-left: 2em;
+    color: #ffffff;
+    text-decoration: underline;
+    font-family: 'Notable', sans-serif;
+}
+
+.nombreRed{
+    display: flex;
+    width: 100%;
+    padding-top: 4em;
+}
+
+.nombreRed i{
+    font-size: 2.4em;
+    color: #ffffff;
+}
+
+.container .opciones li {
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em 1em;
+}
+
+.container .opciones li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+
+.container .opciones li a:hover{
+    transition: all 0.5s;
+    color: #e4a00d;
+}
+
+.opciones{
+    width: 40%;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    margin-top: 4em;
+    background-color: #362338;
+}
+
+.perfilMain{
+    background-image: url(../img/fotoportada.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.fotoPerfil{
+    width: 16em;
+    height: 16em;
+    border-radius: 100%;
+    border: 0.5em solid #666464;
+    margin: 3em 0 2em;
+    transition: all 1s;
+}
+
+.fotoPerfil:hover{
+    width: 100%;
+    height: 100%;
+    transition: all 4s;
+}
+
+.NombreUsuario{
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.opcionesPersonales li{
+    list-style: none;
+    padding: 0 0 1em 0;
+    color: #e4e0e0;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+.opcionesPersonales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0 3em 3em;
+}
+
+.galeriaMini{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 50%;
+    width: 90%;
+    grid-gap: 0.5em;
+    margin: auto;
+}
+
+.links{
+    text-decoration: none;
+    padding-top: 2em;
+    color: #666464;
+
+}
+
+.foto{
+    width: 100%;
+    transition: all 2s;
+    border-radius: 10%;
+}
+
+.divLike .foto:hover{
+    width: 110%;
+    transition: all 1s;
+}
+
+.publicaciones{
+    width: 100%;
+}
+
+.amigos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.perfilAmigos{
+    text-align: center;
+    padding: 0.5em;
+    background-color: #dfe4e98e;
+    width: 100%;    
+}
+
+.perfilAmigos img{
+    width: 6.5em;
+    height: 6.5em;   
+    border-radius:50%; 
+    border: #232338 solid 2px; 
+    transition: all 1s;
+}
+
+.perfilAmigos img:hover{
+    width: 7.5em;
+    height: 7.5em; 
+    transition: all 1s;
+    border: #c4b818 solid 3px; 
+}
+
+.muro{
+    background-color: #ffffff;
+    margin: 3em 7em 0;
+    padding: 2em 11 em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
